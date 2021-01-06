@@ -9,9 +9,13 @@ public class MakeStars {
         for (int i = 0; i < len; i++) {
           System.out.print("*");
         }
-        System.out.print(" ");
+        if (o.hasNext()) {
+          System.out.print(" ");
+        }
       }
-      System.out.println();
+      if (n.hasNextLine()) {
+        System.out.println();
+      }
     }
   }
 }
